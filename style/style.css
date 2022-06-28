@@ -1,7 +1,7 @@
 /* Content App */
 .contenedor {
   height: 740px;
-  background: url("../img/fondo-liviano.jpg") no-repeat center/cover;
+  background: url("../img/fondo-liviano.jpg") no-repeat;
   width: 100%;
   display: -ms-grid;
   display: grid;
