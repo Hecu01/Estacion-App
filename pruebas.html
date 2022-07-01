@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="mensaje_UPS.css">
+        <link rel="stylesheet" href="style/mensaje_UPS.css">
         <!-- CSS Bootstrap 5 LOCALHOST -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <title>Bienvenido a Estacion-App</title>
@@ -25,7 +25,7 @@
 
         <div>
 
-            <div class="alert alert-dismissible fade show mensaje main" id="main" style="height: 100%;">
+            <div class="alert alert-dismissible fade show mensaje main" style="height: 100%; width: 100%;">
     
                 <div  class="mensaje" id="ventana_mensaje">
                     <p class="">
@@ -36,7 +36,36 @@
                             <div class="mensaje-contenido">
     
                                 <p>
-                                    <svg class="bi flex-shrink-0 me-2" id="logito" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                                    <svg class="bi flex-shrink-0 me-2" id="logito_success" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>                                    <br>
+                                    ¡Se enviaron los datos con éxito! Presione <strong>ACEPTAR</strong> para continuar.
+                                </p>
+                            </div>
+    
+                            <div class="botones">
+                                <button type="button" class=" btn btn-primary" data-bs-dismiss="alert" aria-label="Close" >Aceptar</button>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+    
+            </div>
+        </div>
+        <div>
+
+            <div class="alert alert-dismissible fade show mensaje main" style="height: 100%; width: 100%;">
+    
+                <div  class="mensaje" id="ventana_mensaje">
+                    <p class="">
+                        <img src="img/logo3.png" alt="" width="105">
+                    </p>
+                    <div class="contenedor">
+                        <div class="contenido">
+                            <div class="mensaje-contenido">
+    
+                                <p>
+                                    <svg class="bi flex-shrink-0 me-2" id="logito_danger" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
                                     <br>
                                     ¡Ups! ocurrio un error inesperado. Presione <strong>ACEPTAR</strong> para continuar.
                                 </p>
@@ -53,6 +82,7 @@
     
             </div>
         </div>
+
 
 
 

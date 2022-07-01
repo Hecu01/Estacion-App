@@ -1,12 +1,11 @@
 body{
     height: 100%;
 }
-#main{
+.main{
     display: grid;
     justify-items: center;
     margin-left: 20px;
-    width: 100%;
-    height: 100%;
+
 }
 .mensaje{
     position: relative;
@@ -26,13 +25,21 @@ body{
     padding-bottom: 0;
     z-index: 1;
 }
-#logito{
+#logito_success{
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    color: rgb(0, 148, 49);
+    margin: 3px 0px;
+}
+#logito_danger{
     width: 35px;
     height: 35px;
     padding: 0;
     color: rgb(180, 0, 0);
     margin: 3px 0px;
 }
+
 .mensaje p img{
     position: absolute;
     z-index: 3;
@@ -65,12 +72,12 @@ body{
     margin: 0px 5px;
 }
 @media (max-width: 380px){
-    #main{
+    .main{
         margin-left: 10px;
     }
 }
 @media (max-width: 360px){
-    #main{
+    .main{
         margin-left: 0px;
     }
 }
