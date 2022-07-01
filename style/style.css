@@ -44,8 +44,14 @@
   margin-top: 35px;
   border-radius: 10px;
   width: 310px;
+  display: grid;
+  justify-items: center;
 }
-
+.div-submit{
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+}
 
 .content-app .divisor-1 .buscar h1 {
   text-align: center;

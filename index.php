@@ -15,26 +15,28 @@
             <div class="content-app">
                 <div class="logo">
                     <img src="img/logo3.png" alt="" width="150" >
-                </div>     
+                </div>
+                
                 <div class="divisor-1">
 
                     <div class="buscar">
                         <h1>Estacionar<br>Ahora</h1>
+                        <img src="" alt="">
                         <div class="formulario">
-                            <form action="php/acceder_app.php" method="post">
-                                <label for="">Nombre</label> <br>
-                                <input type="text" name="nombre_usuario"><br>
-                                <label for="">Apellido</label><br>
-                                <input type="text" name="apellido_usuario"><br>
-                                <label for="">Patente</label><br>
-                                <input type="text" name="patente_usuario"><br>
-                                <div class="div-submit">
-                                    <input type="submit" value="Ingresar Ahora" name="ingresar_app" class="button1">
-                                </div>
-                            </form>
-                        </div>
+                            <form action="pagina1.php" method="post">"
+                                <label for="">Nombre</label>
+                                <input type="text">
+                                <label for="">Apellido</label>
+                                <input type="text">
+                                <label for="">Patente</label>
+                                <input type="text">
+                                <input type="submit" value="Ingresar Ahora" class="button1">
 
-    
+                                <?php include('pagina1.php');?>
+                            </form>
+                            
+                        </div>
+                        
                     </div>
                 </div>
 
