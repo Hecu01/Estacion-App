@@ -1,13 +1,36 @@
 <?php
-    include('conn_db.php');
+    // Database connected
+    include('conn_db.php'); 
+
+    // Datos enviados del formulario
     if(isset($_POST['ingresar_app'])){
         if (strlen($_POST['nombre_usuario']) >= 1 && strlen($_POST['apellido_usuario']) >= 1 && strlen($_POST['patente_usuario']) >= 1){
             $nombre = trim($_POST['nombre_usuario']);
             $apellido = trim($_POST['apellido_usuario']);
             $patente = trim($_POST['patente_usuario']);
+            ?>
+            <script>
+                alert('Bienvenido');
+                window.location.href="../pages/Estacionar3.html"
+            </script>
+            <?php
+        }else{
+            ?>
+            <script>
+                alert('ha ocurrido un error');
+                window.location.href="../"
+            </script>
+            <?php
         }
+    }else{
+        ?>
+            <script>
+                alert('Rellene todos los campos');
+                window.location.href="../"
+            </script>
+        <?php
     }
-
+    echo' estas aquí'
 
 
 

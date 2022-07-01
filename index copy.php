@@ -32,7 +32,6 @@
                                 <input type="text">
                                 <input type="submit" value="Ingresar Ahora" class="button1">
 
-                                <?php include('pagina1.php');?>
                             </form>
                             
                         </div>
