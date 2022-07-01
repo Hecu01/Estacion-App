@@ -64,3 +64,13 @@ body{
 .botones button{
     margin: 0px 5px;
 }
+@media (max-width: 380px){
+    #main{
+        margin-left: 10px;
+    }
+}
+@media (max-width: 360px){
+    #main{
+        margin-left: 0px;
+    }
+}
