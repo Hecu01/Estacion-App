@@ -56,3 +56,11 @@ body{
     justify-items: center;
 background-color: rgb(103, 194, 255);
 }
+
+#grua {
+    margin-right: 40px;
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+    
+}

@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(103, 194, 255);
+}
+
+h1 {
+    font-size: 40;
+    font-family: Calibri;
+    margin-right: 10px;
+    padding-bottom: 25px;
+    color: white;
+}
+
+
+
+details {
+    background: rgb(87, 168, 223);
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+.whatsapp {
+    font-size: 25px;
+    
+}
