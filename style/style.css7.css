@@ -34,11 +34,14 @@ color: white;
 }
 
 @font-face {
-    font-family: 'TT Travels Next ExtraBold';
-    src: url('.xampp/htdocs/fonts/fonts/TTTravelsNextExtraBold.ttf') format("truetype");
+    font-family: 'Roboto', sans-serif;
+    src: url('/fonts/Roboto-Light.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
  }
+
+ @import url('/fonts/Roboto-Light.ttf');
+
  body{
     height: 400px;
     width: auto;
