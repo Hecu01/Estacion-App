@@ -1,0 +1,32 @@
+h1{ color: rgb(59, 77, 241);
+    text-align: center;
+    background-image: url("./img/fondoo.png");
+    font-family: calibri;
+    font-weight: 800;
+}
+body{
+    background-color: rgb(13, 175, 40) ;
+}
+.formulario{
+    padding-top: 18%;
+    display: flex;
+    justify-content: center;
+    background-image: url("img/fondoo.png") ;
+    padding-bottom: 65%;
+
+}
+
+
+.formulario form{
+    width: 300px;
+    padding: 20px;
+}
+#cambiar{
+    background-color: pink;
+    border: none;
+}
+.hor-lug{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
