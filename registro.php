@@ -11,7 +11,6 @@ $telefono = $_POST['telefono'];
 $fecha = $_POST['fecha'];
 $ciudad = $_POST['ciudad'];
 $estacionamiento = $_POST['lugar'];
-$posicion = $_POST['posicion'];
 $tipo = $_POST['tipo'];
 $modelo = $_POST['modelo'];
 $patente = $_POST['patente'];
@@ -23,8 +22,8 @@ $año = $_POST['año'];
    VALUES('$nombre','$apellido','$email','$telefono')";
     $resultado = mysqli_query($conexion,$sql);
 
-    $sql= "INSERT INTO estacionamientos(fecha,ciudad,lugar,posicion)
-    VALUES('$fecha','$ciudad','$estacionamiento','$posicion')";
+    $sql= "INSERT INTO estacionamientos(fecha,ciudad,lugar)
+    VALUES('$fecha','$ciudad','$estacionamiento')";
 
     $resultado= mysqli_query($conexion,$sql);
 

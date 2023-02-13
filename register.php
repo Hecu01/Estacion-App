@@ -4,12 +4,11 @@ require_once('config.php');
  
 if(isset($_POST['submit']))
 {
-    if(isset($_POST['nombre'],$_POST['apellido'],$_POST['email'],$_POST['telefono'],$_POST['password']) && !empty($_POST['nombre']) && !empty($_POST['apellido']) && !empty($_POST['email']) && !empty($_POST['password']))
+    if(isset($_POST['nombre'],$_POST['apellido'],$_POST['email'],$_POST['password']) && !empty($_POST['nombre']) && !empty($_POST['apellido']) && !empty($_POST['email']) && !empty($_POST['password']))
     {
         $firstName = trim($_POST['nombre']);
         $lastName = trim($_POST['apellido']);
         $email = trim($_POST['email']);
-        $telefono = trim($_POST['telefono']);
         $password = trim($_POST['password']);
         //$hashPassword = $password;
         $options = array("cost"=>4);
@@ -25,7 +24,7 @@ if(isset($_POST['submit']))
             
             if($stmt->rowCount() == 0)
             {
-                $sql = "insert into usuarios (nombre, apellido, email, telefono, `password`, created_at,updated_at) values(:vnombre,:vapellido,:email,:telefono, :pass,:created_at,:updated_at)";
+                $sql = "insert into usuarios (nombre, apellido, email, `password`, created_at,updated_at) values(:vnombre,:vapellido,:email,:pass,:created_at,:updated_at)";
             
                 try{
                     $handle = $pdo->prepare($sql);
@@ -33,7 +32,6 @@ if(isset($_POST['submit']))
                         ':vnombre'=>$firstName,
                         ':vapellido'=>$lastName,
                         ':email'=>$email,
-                        ':telefono'=>$telefono,
                         ':pass'=>$hashPassword,
                         ':created_at'=>$date,
                         ':updated_at'=>$date
@@ -50,7 +48,6 @@ if(isset($_POST['submit']))
                 $valFirstName = $firstName;
                 $valLastName = $lastName;
                 $valEmail = '';
-                $valTelefono = $telefono;
                 $valPassword = $password;
  
                 $errors[] = 'el Email ya esta registrado';
@@ -79,12 +76,7 @@ if(isset($_POST['submit']))
         {
             $valLastName = $_POST['apellido'];
         }
-        if (!isset($_POST['telefono'])|| empty($_POST['telefono'])) {
-            $errors[] = 'el telefono es requerido';
-        }else{
-            $valTelefono = $_POST['telefono'];
-        }
-
+ 
         if(!isset($_POST['email']) || empty($_POST['email']))
         {
             $errors[] = 'Email es requerido';
@@ -162,10 +154,6 @@ if(isset($_POST['submit']))
                                                 <input class="form-control" name="email" id="inputEmail" type="email" placeholder="name@example.com" />
                                                 <label for="inputEmail">Email</label>
                                             </div>
-                                            <div class= "row mb-3">
-                                                <label for= "inputTelefono">Teléfono</label>
-                                                <input class= "form-control" name="telefono" id= "inputTelefono" type="tel">
-                                    </div>
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
