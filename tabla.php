@@ -10,7 +10,11 @@
 
     <title>Tabla</title>
 
-    <table>
+  
+</head>
+<body>
+
+<table>
     <tr id="fecha" name="fecha">
         <td>Fecha</td>
     </tr>
@@ -26,22 +30,39 @@
     <tr id="modelo" name="modelo">
         <td>Modelo</td>
     </tr>
-    <tr>
+    <tr id="año" name= "año">
         <td>Año</td>
     </tr>
-    <tr>
+    <tr id= "patente" name= "patente">
         <td>Patente</td>
     </tr>
-    </table>
-</head>
-<body>
-    
-</body>
-</html>
-
+  
 
 <?php
+include('registro.php');
 
 
+$query= "SELECT * from estacionamiento";
+$resultados = mysqli_query($con,$query);
+while($consulta = mysqli_fetch_array($resultados)){
+    
+    
+    
+    ?>
 
-?>
+<tr>
+            <td><?php echo $consulta['Fecha']."|" ?></td>
+            <td><?php echo $consulta['Hora'] ?></td>
+            <td><?php echo $consulta['Lugar'] ?></td>
+            <td><?php echo $consulta['Autos'] ?></td>
+            <td><?php echo $consulta['Modelo'] ?></td>
+            <td><?php echo $consulta['Año'] ?></td>
+            <td><?php echo $consulta['Patente']?></td>
+            <br>
+        </tr>
+
+        
+</table> 
+</body>
+
+</html>

@@ -12,16 +12,7 @@
 
  @import url(//db.onlinewebfonts.com/c/c03f80ccf879e6f840ca56279854945e?family=Helvetica+Neue);
 
- .contenedor {
-    background-image: url("img\fondoo.png");
-    height: 100px;
-    width: 100%;
-    display: grid;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
-  }
+ 
 
 h1{ 
     font-family: "Helvetica";
@@ -35,17 +26,17 @@ h1{
     border-radius: 7px;
     width: 303px;
     height: 170px;
-    animation: ram 2s ease-in;
+  transition: .25s all;
 }
 
-@keyframes ram {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+.ram img:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
+
+
+
+
 
 
 #sn {
@@ -54,23 +45,21 @@ h1{
     height: 170px;
     animation: sn 1.43s ease-in;
     overflow: hidden;
+    
 }
 
-@keyframes sn {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 
+
+
+.sn img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
 #rosario {
     border-radius: 7px;
     width: 300px;
     height: 170px;
-    animation: ros 0.85s ease-in;
-    transition: all .45s ease-in-out;
+   
     
 }
 
@@ -79,22 +68,14 @@ h1{
     transform: scale(1.3);
     width: 300px;
     height: 170px;
-    box-shadow: 3px 3px dodgerblue, -3px -3px dodgerblue;
-    transition: 2s ease-in-out;
+   
 
 }
 
 
 
 
-@keyframes ros {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+
 
 body{
     height: 630px;
@@ -104,21 +85,12 @@ body{
         -ms-flex-align: center;
             align-items: center;
     justify-items: center;
-  background-color: white;
   
-  transition: 2s ;
-  animation: fadeIncity 1.5s ease-in;
+  
+  
 }
 
-@keyframes fadeIncity {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-    
-}
+
 
 
 #grua {

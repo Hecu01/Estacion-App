@@ -1,15 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
-
-
-
+* {
+  font-family: Open Sans;
+}
+    
 
 
 @font-face {
     font-family: "Helvetica"; src: url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.eot");
-     src: url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.woff") format("woff"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.svg#Helvetica") format("svg");
+     src: url("/fonts/Helvetica-Black-Oblique.ttf") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.woff") format("woff"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.svg#Helvetica") format("svg");
 }
 
-@import url(//db.onlinewebfonts.com/c/3f610a59a3c8a0229084ea3e1312738c?family=Helvetica);
+ @import url(//db.onlinewebfonts.com/c/c03f80ccf879e6f840ca56279854945e?family=Helvetica+Neue);
+
+body{
+    text-align: center;
+}
+
+h1{ 
+    font-family: "Helvetica";
+    font-size: 30;
+    padding-top: 15px; 
+    align-content: center;
+    
+ }
+
+#ramallo {
+    border-radius: 7px;
+    width: 303px;
+    height: 170px;
+    animation: ram 2s ease-in;
+    transition: all .45s ease-in-out;
+}
+
+.ram img:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+
+@keyframes ram {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+#sn {
+    border-radius: 7px;
+    width: 298px;
+    height: 170px;
+    animation: sn 1.43s ease-in;
+    overflow: hidden;
+    transition: all .45s ease-in-out;
+}
+
+@keyframes sn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.sn img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+#rosario {
+    border-radius: 7px;
+    width: 300px;
+    height: 170px;
+    animation: ros 0.85s ease-in;
+    transition: all .45s ease-in-out;
+    
+}
+
+.rosario img:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    width: 300px;
+    height: 170px;
+   
+
+}
+
+
+
+
+@keyframes ros {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+#grua {
+    margin-right: 40px;
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+    
+}
 
 
 h3 {
@@ -197,4 +302,3 @@ footer{
 	}
 
 }
-

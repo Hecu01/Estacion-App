@@ -60,24 +60,4 @@ body {
     
   }
 
-  p {
-   
-    color: white;
-    font-family: arial;
-    font-size: 5em;
-    animation: shiuf 2s ease-in-out infinite;
-  }
-
-  @keyframes shiuf {
-    0%{
-        opacity: 0;
-    }
-    
-    50%{
-        opacity: 1;
-    }
-    
-    100%{
-        opacity: 0;
-    }
-  }
+ 
