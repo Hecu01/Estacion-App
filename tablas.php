@@ -62,7 +62,7 @@
                 <td><?php echo $row['nombre']; ?></td>
                 <td><?php echo $row['apellido']; ?></td>
                 <td><?php echo $row['telefono']; ?></td>
-            <?php }} ?>
+            <?php } ?>
 
             <?php 
 

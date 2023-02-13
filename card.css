@@ -1,0 +1,155 @@
+@import "~bootstrap4-card-tables/src/bootstrap4-card-tables";
+
+
+@media (max-width: 800px) {
+    .facet_sidebar {
+      display: none;
+    }
+  }
+
+  @font-face {
+    font-family: "Helvetica"; src: url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.eot");
+     src: url("/fonts/Helvetica-Black-Oblique.ttf") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.woff") format("woff"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.svg#Helvetica") format("svg");
+}
+
+ @import url(//db.onlinewebfonts.com/c/c03f80ccf879e6f840ca56279854945e?family=Helvetica+Neue);
+
+   
+h1 {
+  font-family: "Helvetica";
+  margin-left: 10%;
+}
+
+
+ 
+.table-responsive {
+  width: 50%;
+}
+.card td{
+  
+  text-align: center;
+  width: 800px;
+}
+  
+
+  .tabla1 th {
+    text-align: center;
+    background-color: rgb(71, 80, 255);
+    color: white;
+    width: 800px;
+  }
+
+ 
+
+  .tabla2 th{
+    text-align: center;
+    background-color: rgb(71, 80, 255);
+    color: white;
+    width: 800px;  }
+
+
+  
+
+  .tabla3 th {
+    text-align: center;
+    background-color: rgb(71, 80, 255);
+    color: white;
+    width: 800px;
+  }
+  button {
+    margin-left: 7%;
+    background-color:  rgb(71, 80, 255);
+    color: white;
+    height: 45px;
+    width: 130px;
+    font-size: 25px;
+    font-family: Calibri;
+    font-weight: 800;
+    border: hidden white;
+    border-radius: 10px ;
+    transition: .25s ease-in-out;
+
+  }
+
+  button:hover {
+    transform: scale(1.1);
+  }
+
+  .btn-success {
+    display: inline-block;
+    text-align: left;
+    margin-left: 1cm;
+  }
+
+  .eliminar{
+    background-color: red;
+    font-family: Calibri;
+    margin-left: 5%;
+    color: white;
+    height: 45px;
+    width: 130px;
+    font-size: 25px;
+  }
+
+  .volver img {
+    margin-bottom: 1.5%;
+    margin-right: 7%;
+    border-radius: 45px;
+    width: 50px;
+  }
+
+
+  .form-group {
+    background-size: cover;
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+ 
+  }
+
+  .form-in {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+  }
+
+ .form-out  {
+    opacity: 0;
+    transition: opacity .5s ease-out;
+  }
+
+  
+  .form-group:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  
+  .form-popup {
+  
+    position: absolute;
+    top: 35%;
+  right: 35%;
+   width: 35%;
+  border-radius: 12px;
+   background-color: white;
+   box-shadow: 0 0 25px darkgrey;
+   transition: all 0.5s ease-in-out;
+  }
+
+ 
+
+
+  
+  
+  
+  
+ 
+
+
+
