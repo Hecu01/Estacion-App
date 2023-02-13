@@ -14,42 +14,40 @@
                 <h1>Reserva tu lugar</h1>
             </div>
             <div class="formulario">
-                <form action="registro.php" class="card" id="formulario-reservar-lugar">
+                <form  class="card" method= "post" action= "Estacionar3.html">
+                    
                     <h4 style="text-align: center;">Estacionamiento</h4>
-                    <h6 style="text-align: center;">Montevideo 2445</h6>
+                    <h6 style="text-align: center;">Garibaldi 239</h6>
                     <br>
-                    <img src="img/montevideo2445.png" alt="" width="130" height="130" style="margin: auto; border-radius: 50%;">
+                    <img src="img/garibaldu.png" alt="" width="130" height="130" style="margin: auto; border-radius: 50%;">
                   <br>
-                    <input type="date" name="fecha" id="fecha">
+                    <input type="date" name="" id="">
                     <div class="hor-lug">
                         <label for="">Horario</label>
-                        <input type="time" name="hora" id="hora" style="margin: 0px 10px;">
+                        <input type="time" name="" id="" style="margin: 0px 10px;">
                         <label for="">Lugar</label>
                         <select name="lugar" id="lugar" style="margin: 0px 10px;">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
+                            <option value="lugar">1</option>
+                            <option value="lugar">2</option>
+                            <option value="lugar">3</option>
+                            <option value="lugar">4</option>
+                            <option value="lugar">5</option>
+                            <option value="lugar">6</option>
+                            <option value="lugar">7</option>
+                            <option value="lugar">8</option>
+                            <option value="lugar">9</option>
                         </select>
+                        
+                        
                     </div>
                     <br>
                     <div class="patente">
                         <label for= "">Patente</label>
-                        <input type="text" name="patente" id="patente">
+                        <input type="text" name="" id="">
                     </div>
 
                     <br>
-                    <input type="submit" onclick= "mialerta();"class="btn btn-primary" >
-                    <script>
-                        function mialerta() {  
-                            alert("Estacionamiento exitoso");
-                        } 
-                    </script>
+                    <input type="submit" class="btn btn-primary" >
                 </form>
             </div>
         </div>
