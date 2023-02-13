@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Helvetica"; src: url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.eot");
+     src: url("/fonts/Helvetica-Black-Oblique.ttf") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.woff") format("woff"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.svg#Helvetica") format("svg");
+}
+
+ @import url(//db.onlinewebfonts.com/c/c03f80ccf879e6f840ca56279854945e?family=Helvetica+Neue);
+
+ @font-face {
+  font-family: "Raleway"; 
+   src: url("/fonts/Raleway/static/Raleway-Thin.ttf"),format('true');
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+ body {
+    background-color: lightgrey;
+ }
+
+
+
+
+
+h1 {
+    font-family: Helvetica;
+     margin-left: 5%;
+    
+}
+
+
+
+
+.d-flex {
+    position: fixed;
+    height: 100%;
+    background-color: darkblue;
+    top: 0;
+    width: 15%;
+}
+
+.d-flex a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    border: none;
+    background-color: yellow;
+    font-family: Calibri;
+    color: black;
+}
+
+.guardar {
+  width: 140px;
+  height: 30px;
+  font-family: 'Raleway','sans-serif';
+  background-color: blue;
+  color: white;
+}

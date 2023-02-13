@@ -1,0 +1,195 @@
+<?php
+    $conexion = mysqli_connect("localhost","root","","admin01");
+    ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href= "chosen.css" rel= "stylesheet" type= "text/css"
+    <link href="db.onlinewebfonts.com/c/3f610a59a3c8a0229084ea3e1312738c?family=Helvetica" rel="stylesheet" type="text/css"/>   
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
+   
+    <title>Registrar Usuario</title>
+</head>
+<body style= "background-color: lightgrey">
+
+    <div class="contenedor-general">
+        <h1 align="center" style="font-family:Helvetica">ESTACIONAPP</h1>
+        
+            <!--
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13310.249677533842!2d-60.01438485!3d-33.486741599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1664509589146!5m2!1ses-419!2sar" width="200" height="200" style="border-radius: 50px; margin-left: 1cm;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            -->
+
+        <div class="contenedor-registro">
+
+            <form action="registro.php" name="formular" id= "formular" method="POST" align="center" autocomplete="on" >
+        
+        
+                <br>
+                <br>
+                <label for="fecha">Fecha</label>
+                <br>
+                <input class="form-type" type="date"  id="fecha" name="fecha">
+        
+                <br>
+                <br>
+        
+                <label for="">Ciudad</label>
+                <br>
+                <select class="form-select" name="ciudad" id="ciudad">
+                    <option value="San Nicolás">San Nicolás</option>
+                    <option value="Ramallo">Ramallo</option>
+                    <option value="Rosario">Rosario</option>
+                </select>
+        
+                <br>
+                <br>
+        
+                <label for="">Estacionamiento</label>
+                <br>
+                        
+                <br>
+                <select  name="direccion" id="direccion" onchange = "cambio()"> 
+                        
+
+
+               
+                    <optgroup label="San Nicolás">San Nicolás</optgroup>
+                        <option value="Mitre 185" data-option-array-index= "1"><a href="https://www.google.com/maps/dir//Estacionamiento+Mitre,+ACC,+Bartolom%C3%A9+Mitre+185,+B2900+San+Nicol%C3%A1s+de+Los+Arroyos,+Provincia+de+Buenos+Aires/@-33.3337316,-60.2304946,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95b7678c4060d399:0x692dcf9fc9efa1e9!2m2!1d-60.2184709!2d-33.3300429!3e0">Mitre 185</a></option>
+
+                        <option value="Garibaldi 239"data-option-array-index= "2"><a href="https://www.google.com/maps/dir//ESTACIONAMIENTO+24Hs,+Garibaldi+239,+San+Nicol%C3%A1s+de+Los+Arroyos,+Provincia+de+Buenos+Aires/@-33.3336112,-60.2182131,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95b76788d989bf6d:0x8c4c4e7bced14e26!2m2!1d-60.2160319!2d-33.3336105!3e0">Garibaldi 239</a></option>
+
+                        <option value="Garibaldi 130"data-option-array-index= "3"><a href="https://www.google.com/maps/dir//Garibaldi+130,+San+Nicol%C3%A1s+de+Los+Arroyos,+Provincia+de+Buenos+Aires/@-33.3315689,-60.2159549,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95b76789a1afae29:0xc1f8001f517fe5eb!2m2!1d-60.2137662!2d-33.3315734!3e0">Garibaldi 130</a></option>
+
+                        <option value="9 de Julio 30"data-option-array-index= "4"><a href="https://www.google.com/maps/dir//Estacionamiento+9+de+Julio+Las+24+hs,+9+de+Julio+30,+San+Nicol%C3%A1s+de+Los+Arroyos,+Provincia+de+Buenos+Aires/@-33.405825,-63.5330248,7z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95b7678dd356223f:0x4547b958f199dffe!2m2!1d-60.2197878!2d-33.3314171!3e0">9 de Julio 30</a>
+
+                        <option value="Mitre 575"data-option-array-index= "5"><a href="https://www.google.com/maps/dir//Bartolom%C3%A9+Mitre+575,+San+Nicol%C3%A1s+de+Los+Arroyos,+Provincia+de+Buenos+Aires/@-33.337796,-60.2283403,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95b767908f9bb63b:0x7f67df3a299e5c74!2m2!1d-60.2261516!2d-33.3378005!3e0">Mitre 575</a></option>
+
+                        <option value="San Martin 28"data-option-array-index= "6"><a href="https://www.google.com/maps/dir//San+Mart%C3%ADn+28,+San+Nicol%C3%A1s+de+Los+Arroyos,+Provincia+de+Buenos+Aires/@-33.3328185,-60.2223934,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95b7678e66a19241:0x636cc611747d2c60!2m2!1d-60.2202047!2d-33.332823!3e0">San Martin 28</a></option>
+
+                        <optgroup label="Rosario">Rosario</optgroup>
+                        <option value="Balcarce 930"data-option-array-index= "7"><a href="https://goo.gl/maps/ssLLF4A4C5r6gKZQ9">
+                        Balcarce 930</a></option>
+                        <option value="3 de Febrero"data-option-array-index= "8"><a href="https://goo.gl/maps/Gb54aujKpFsopUwn8">
+                            <img src="img/3defparking.png" class="efectoPrueba" >
+                        3 de Febrero</a></option>
+
+                        <option value="9 de Julio 2248"data-option-array-index= "9"><a href="https://goo.gl/maps/15wvwRy4XHMrXFXq5">
+                            <img src="img/9dej.png" class="efectoPrueba" >9 de Julio 2248
+                        </a></option>
+
+                        <option value="Montevideo 2445" data-option-array-index= "10"><a href="https://goo.gl/maps/KhatCCaXfrvUbqTm6"><img src="img/mont.png" class="efectoPrueba" >montevideo 2445</a></option>
+
+                        <option value="España 1045"data-option-array-index= "11"><a href="https://goo.gl/maps/Tnzkmem4c6oKayYWA"><img src="img/españa.png" class="efectoPrueba">España 1045</a></option>
+
+                        <option value="Zeballos 2245"data-option-array-index= "12"><a href="https://goo.gl/maps/RcXsSBaa97DEXzp56"><img src="img/zeballos.png">Zeballos 2245</a></option>
+
+                        <option value="Pellegrini 1943"data-option-array-index= "13"><a href="https://goo.gl/maps/4zeYUWGVyiA79dE88"><img src="img/pellegrini.png">Pellegrini 1943</a></option>
+                        <optgroup label="Ramallo">Ramallo</optgroup>
+
+                        <option value="Estación Ferrocarril"data-option-array-index= "14"><a href="https://www.google.com/maps/dir/-33.3785912,-60.1789127/Estaci%C3%B3n+de+Ferrocarril+Villa+Ramallo,+Unnamed+Road,+Villa+Ramallo,+Provincia+de+Buenos+Aires/@-33.4535691,-60.2658133,11z/data=!3m1!4b1!4m13!1m2!2m1!1sestacionamientos+ramallos!4m9!1m1!4e1!1m5!1m1!1s0x95b9e3a4aa863829:0x626b29c6d1f7ca9!2m2!1d-60.0679259!2d-33.5016766!3e0"><img src="img/ferro.png"  width="130" height="130" style=" border-radius: 50%;">Estación Ferrocarril
+                        </a></option>
+
+                        <option value="Camping Las Carpas" data-option-array-index= "15"><a href="https://goo.gl/maps/5NyQyK9Usf4HDAxT7"><img src="img/carpa.png" alt="" width="130" height="130" style="margin: auto; border-radius: 50%;">Camping "Las Carpas"</a></option>
+
+                        <option value="Complejo Non Stop"data-option-array-index= "16"><a href="https://goo.gl/maps/Daw26BezL5YTNzZSA">Complejo Non Stop</a></option> 
+                    </select> 
+                    
+                   
+
+                       
+                <br>
+                <br>
+
+                <select name= "estado" id= "estado" onchange= "cambio()">
+                <option value= "">Estado</option>
+                <option value= "0">Disponible</option>
+                <option value= "1">Ocupado</option>
+                    </select>
+                <br>
+                <br>
+        
+                <label for="tipo">Vehículo</label>
+                <br>
+                <select class="form-select" name="tipo" id="tipo">
+                    <option value="Auto">Auto</option>
+                    <option value="Moto">Moto</option>
+                    <option value="Camioneta">Camioneta</option>
+                </select>
+        
+                <br>
+                <br>
+        
+                <label for="modelo">Modelo</label>
+                <br>
+                <input class="form-type" type="text" id="modelo" name="modelo">
+        
+                <br>
+                <br>
+                <label for="patente">Patente</label>
+                <br>
+                <input class="form-type" type="text" id="patente" name="patente">
+                
+                <br>
+                <br>
+        
+                <input type="submit" name= "enviar" id="enviar" style="display: block; margin: auto;" onclick="miAlerta()" class="btn btn-primary" value="Enviar">
+        
+        
+            </form>
+            
+        </div>
+
+        
+        
+    </div>
+
+</body>
+
+<script>
+    function miAlerta(){
+        alert("Estacionamiento exitoso");
+    }
+</script>
+
+
+
+   
+   
+<script>
+
+function cambio() {
+
+    
+    
+    $("#direccion").change(function(){
+            
+  if($("#estado").val() == 0){
+     $("#direccion option:selected").prop('disabled',false);
+     $('#enviar').attr('disabled',false);
+     $('#estado option[value= "0"]').prop('selected','selected');
+   } else if($('#estado').val() == 1){
+    $("#direccion option: selected").prop('disabled',true);
+    $('#enviar').attr('disabled','disabled');
+    $('#estado option[value = "1"]').prop('selected','selected');
+    }
+  
+});
+
+}
+
+
+
+    </script>
+
+</html>

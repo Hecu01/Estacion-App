@@ -1,0 +1,17 @@
+body {
+    background-color: #0d6efd;
+}
+
+
+.container {
+    width: 50%;
+    background-color: white;
+    margin-top: 10%;
+    padding-bottom: 2%;
+    box-shadow: 0 0 25px grey;
+}
+
+.container h3 {
+    border-bottom: 1px solid lightgrey;
+}
+

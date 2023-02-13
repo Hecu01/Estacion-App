@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Raleway"; 
+     src: url("/fonts/Raleway/static/Raleway-Thin.ttf"),format('true');
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+body {
+    background-color: rgb(0, 0, 95);
+}
+
+label {
+    
+    font-family: 'Raleway','sans-serif';
+}
+
+
+form {
+    background-color: white;
+    width: 600px;
+    margin-top: 15%;
+    margin-left: 27%;
+    height: 480px;
+}
+
+h2 {
+   
+    font-family: 'Raleway','sans-serif';
+}
+
+.register {
+    text-decoration: none;
+    font-family: 'Raleway', 'sans-serif';
+    margin-top: 15%;
+}
+
