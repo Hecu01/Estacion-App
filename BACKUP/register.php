@@ -17,14 +17,14 @@ if(isset($_POST['submit']))
  
         if(filter_var($email, FILTER_VALIDATE_EMAIL))
         {
-            $sql = 'select * from usuarios where email = :email';
+            $sql = 'select * from users where email = :email';
             $stmt = $pdo->prepare($sql);
             $p = ['email'=>$email];
             $stmt->execute($p);
             
             if($stmt->rowCount() == 0)
             {
-                $sql = "insert into usuarios (nombre, apellido, email, `password`, created_at,updated_at) values(:vnombre,:vapellido,:email,:pass,:created_at,:updated_at)";
+                $sql = "insert into users (nombre, apellido, email, `password`, created_at,updated_at) values(:vnombre,:vapellido,:email,:pass,:created_at,:updated_at)";
             
                 try{
                     $handle = $pdo->prepare($sql);

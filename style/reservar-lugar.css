@@ -9,6 +9,10 @@
  @import url('/fonts/Poppins-Black.ttf format (truetype)');
 
 
+ body {
+    background-color: lightgray;
+}
+
 h1{ color: white;
     text-align: center;
     background-image: url("img/fondoo.png") ;
@@ -35,7 +39,7 @@ h1{ color: white;
     padding: 20px;
 }
 #cambiar{
-    background-color: pink;
+    
     border: none;
 }
 .hor-lug{
