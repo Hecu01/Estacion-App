@@ -22,7 +22,7 @@ if(isset($_POST['submit']))
 				{
 					unset($getRow['password']);
 					$_SESSION = $getRow;
-					header('location:ciudades.html');
+					header('location:icono.html');
 					exit();
 				}
 				else

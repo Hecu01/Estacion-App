@@ -12,7 +12,51 @@
     <title>San Nicolás</title>
 </head>
 <body>
+    <style>
+  table {
+            opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+        }
+
+   @keyframes fadeInOpacity {
+
+    0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
     
+   }
+   h1 {
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .5s;
+   }
+
+   @keyframes fadeIn {
+    0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+   }
+   table button {
+   
+    cursor: pointer;
+   }
+    
+   
+   
+
+   
+   
+    </style>
     <h1  style="font-family: 'Roboto', sans-serif;" align= "center">ESTACIONAPP</h1>
 
         <table align="center" class="est" >
@@ -20,7 +64,7 @@
         <tr><td><a href="https://www.google.com/maps/dir//Estacionamiento+Mitre,+ACC,+Bartolom%C3%A9+Mitre+185,+B2900+San+Nicol%C3%A1s+de+Los+Arroyos,+Provincia+de+Buenos+Aires/@-33.3337316,-60.2304946,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95b7678c4060d399:0x692dcf9fc9efa1e9!2m2!1d-60.2184709!2d-33.3300429!3e0">
 
             <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=7ZQRsnZhTxuzyFszyzLXbQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=306.06625&pitch=0&thumbfov=100"  width="130" height="130">
-        </a></td><td><button class="entrar" onclick="location.href='mitre185.html'">Estacionar</button></td></tr>
+        </a></td><td><button class="entrar" onclick="location.href='mitre185.html'"><span></span>Estacionar</button></td></tr>
         <tr><th colspan="2" style="font-family: 'Roboto', sans-serif;">Garibaldi 239</th>
         <tr><td> <a href="https://www.google.com/maps/dir//ESTACIONAMIENTO+24Hs,+Garibaldi+239,+San+Nicol%C3%A1s+de+Los+Arroyos,+Provincia+de+Buenos+Aires/@-33.3336112,-60.2182131,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95b76788d989bf6d:0x8c4c4e7bced14e26!2m2!1d-60.2160319!2d-33.3336105!3e0">
             <img src="img/garibaldi239.png"  width="130" height="130"></td></a>

@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Helvetica"; src: url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.eot");
+     src: url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.woff") format("woff"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3f610a59a3c8a0229084ea3e1312738c.svg#Helvetica") format("svg");
+}
+
+@import url(//db.onlinewebfonts.com/c/3f610a59a3c8a0229084ea3e1312738c?family=Helvetica);
+
+
+
+h1 {
+    font-family: "Helvetica";
+    text-align: center;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .5s;
+   }
+
+   @keyframes fadeIn {
+    0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+   }
+
+   table {
+    font-family: "Helvetica";
+   }
+
+  .mitre {
+    animation: fade 2s ease-in;
+    transition: 1.5s;
+  }
+
+  @keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+  }
+
+  table th {
+    padding-top: 2.5cm;
+  }
+  table button {
+    
+    
+    margin-left: 1.5cm;
+      background-color:  rgb(71, 80, 255);
+      color: white;
+      height: 45px;
+      width: 130px;
+      font-size: 25px;
+      font-family: Calibri;
+      font-weight: 800;
+      border: hidden white;
+      border-radius: 10px ;
+      transition: .25s ease-in-out;
+  
+  
+  
+  }
+  
+  button:hover{
+      outline:2px groove;
+      transform: scale(1.3);
+      outline-offset: 3px;
+  }
+  .garibaldi239 {
+   animation: fade 2.5s ease-in;
+   transition: 2.2s;
+  }
+
+  @keyframes fade {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+
+
+  .garibaldi130 {
+    transition: 2.5s;
+    animation: fade 2.8s ease-in-out;
+  }
+
+  @keyframes fade {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+
+.nuevedejulio {
+  transition: 2.9s;
+  animation: fade 3s ease-in-out;
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.mitre575 {
+  transition: 3.2s;
+  animation: fade 3.5s ease-in-out;
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+.sanmartin {
+  transition: 3.55s;
+  animation: fade 4s ease-in-out;
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+table img{
+  border-radius: 50%;
+}

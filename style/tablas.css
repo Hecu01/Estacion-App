@@ -44,9 +44,9 @@ table td img {
 }
 
 
-table button {
+.entrar {
 
-    border: solid rgb(141, 136, 136);
+    border: solid 0.5px rgb(141, 136, 136);
     border-radius: 7px;
     background-color: white;
     font-family: 'Roboto', sans-serif;
@@ -54,8 +54,14 @@ table button {
     width: 140px;
     height: 55px;
     font-size: 20px;
-    
-    
+    transition: 0.2s ease-in-out;
+   
 }
 
-
+.entrar:focus {
+    outline: 0;
+}
+.entrar:hover {
+    background-color: rgb(86, 108, 209);
+   color:white;
+}
